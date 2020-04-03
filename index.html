@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS For Beginners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+  </head>
+  <body>
+    <header>
+      <h1>DeVaja exercise 2</h1>
+    </header>
+    <section class="container">
+      <input class="btn" type="submit" value="Add"  onclick="openForm()">
+      <p>Filter questions:</p>
+      <select id = "choose" onclick="readLocalStorage(value)">
+        <option value="all">All questions</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JS</option>
+      </select>
+    </section>
+
+    <section class="container" id="popup">
+      <form class="my-form" >
+        <h1>Add question</h1>
+        <div class="msg"></div>
+        <div>
+          <label>Question for The Guru:</label>
+          <input type="text" id="question">
+        </div>
+        <div>
+          <label>Category:</label>
+          <select id="select">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+          </select>
+        </div>
+        <input class="btn"  type="button" value="Save" onclick="saveToLocalStorage()">
+        <input class="btn" type="button" value="Cancel" onclick="closeForm()">
+      </form>
+    </section>
+
+    <div class="l-wrap">
+      <div class="three-col-grid">
+        
+      </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
